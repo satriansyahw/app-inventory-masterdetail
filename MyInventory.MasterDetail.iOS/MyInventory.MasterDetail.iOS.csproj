@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{CDC231D1-23F9-4232-85FB-C55C4B5F6938}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyInventory.MasterDetail.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MyInventoryMasterDetailiOS</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchSdkVersion />
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchFloat32>False</MtouchFloat32>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchSdkVersion />
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchFloat32>False</MtouchFloat32>
+    <DeviceSpecificBuild>False</DeviceSpecificBuild>
+    <MtouchI18n />
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BuildIpa>true</BuildIpa>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intersoft.AppFramework, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=5ece42678189aa22, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.525\lib\Intersoft.AppFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.ComponentModel, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.RestClient, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.525\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Auth, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.525\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification.iOS, Version=5.0.5000.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="iTunesArtwork%402x" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\ItemEditViewController.cs" />
+    <Compile Include="ViewControllers\ItemListViewController.cs" />
+    <Compile Include="ViewControllers\PhotoDetailViewController.cs" />
+    <Compile Include="ViewControllers\PhotoDetailViewController.designer.cs">
+      <DependentUpon>PhotoDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemCollectionViewCell.cs" />
+    <Compile Include="Views\ItemCollectionViewCell.designer.cs">
+      <DependentUpon>ItemCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\AppInitializer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="ViewControllers\MainDrawerViewController.cs" />
+    <Compile Include="ViewControllers\NavigationViewController.cs" />
+    <Compile Include="ViewControllers\InventoryMasterDetailViewController.cs" />
+    <Compile Include="ViewControllers\ItemDetailViewController.cs" />
+    <Compile Include="ViewControllers\ItemDetailViewController.designer.cs">
+      <DependentUpon>ItemDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CategoryListViewController.cs" />
+    <Compile Include="ViewControllers\CategoryMasterDetailViewController.cs" />
+    <Compile Include="ViewControllers\CategoryItemListViewController.cs" />
+    <Compile Include="ViewControllers\SettingsMasterDetailViewController.cs" />
+    <Compile Include="ViewControllers\AboutViewController_iPad.cs" />
+    <Compile Include="ViewControllers\AboutViewController_iPad.designer.cs">
+      <DependentUpon>AboutViewController_iPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\AboutViewController.cs" />
+    <Compile Include="ViewControllers\AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SettingsListViewController.cs" />
+    <Compile Include="ViewControllers\PreferencesViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\item_placeholder.png" />
+    <BundleResource Include="Resources\item_placeholder%402x.png" />
+    <BundleResource Include="Resources\itemcell_frame.png" />
+    <BundleResource Include="Resources\itemcell_frame%402x.png" />
+    <BundleResource Include="Resources\blue_check.png" />
+    <BundleResource Include="Resources\contact_placeholder%402x.png" />
+    <BundleResource Include="Resources\frame.png" />
+    <BundleResource Include="Resources\frame%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\ItemCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Views\SelectionDetailView_iPad.xib" />
+    <InterfaceDefinition Include="Views\PhotoDetailViewController.xib" />
+    <InterfaceDefinition Include="Views\ItemListView_iPhone.xib" />
+    <InterfaceDefinition Include="Views\ItemDetailViewController.xib" />
+    <InterfaceDefinition Include="Views\AboutView_iPad.xib" />
+    <InterfaceDefinition Include="Views\AboutView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyInventory.Core\MyInventory.Core.csproj">
+      <Project>{33D4DF78-2CBF-4E39-8E8F-E83A11870E77}</Project>
+      <Name>MyInventory.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,36 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:IntersoftUI="using:Intersoft.Crosslight.UI.WinRT">
+
+    <Style x:Key="PopupWindowDefault" TargetType="IntersoftUI:PopupWindow">
+        <Setter Property="OverlayBackground" Value="#BF000000"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="ContentPresenterStyle">
+            <Setter.Value>
+                <Style TargetType="ContentControl">
+                    <Setter Property="MinHeight" Value="200"/>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="IntersoftUI:PopupWindow">
+                    <Popup x:Name="PopupElement">
+                        <Grid x:Name="RootElement">
+                            <Border x:Name="OverlayElement" Background="{TemplateBinding OverlayBackground}"/>
+                            <Frame x:Name="ContentPresenter" Padding="{TemplateBinding Padding}" 
+                                   VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                   Style="{TemplateBinding ContentPresenterStyle}">
+                                <ContentPresenter/>
+                            </Frame>
+                        </Grid>
+                    </Popup>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="IntersoftUI:PopupWindow" BasedOn="{StaticResource PopupWindowDefault}"/>
+    
+</ResourceDictionary>

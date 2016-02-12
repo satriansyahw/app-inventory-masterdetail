@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="e99756d3-ba19-47ce-994a-fedefa1f786d" Publisher="CN=Jimmy" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>MyInventory.WinRT</DisplayName>
+    <PublisherDisplayName>Jimmy</PublisherDisplayName>
+    <Logo>Assets\Images\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MyInventory.WinRT.App">
+      <VisualElements DisplayName="My Inventory" Logo="Assets\Images\Logo.png" SmallLogo="Assets\Images\SmallLogo.png" Description="Powered by Intersoft Crosslight, this inventory application for Windows Store is completely built with MVVM design pattern. It leverages the common domain model, business logic, data service, and user interaction logic which are shared across other mobile platforms such as iOS, Android and Windows Phone." ForegroundText="light" BackgroundColor="#dedede">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\Images\WideLogo.png" />
+        <SplashScreen Image="Assets/Images/SplashScreen.png" BackgroundColor="#dedede" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="videosLibrary" />
+    <Capability Name="sharedUserCertificates" />
+    <Capability Name="removableStorage" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="proximity" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>

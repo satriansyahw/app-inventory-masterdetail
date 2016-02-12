@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33D4DF78-2CBF-4E39-8E8F-E83A11870E77}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyInventory</RootNamespace>
+    <AssemblyName>MyInventory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_Mono|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Infrastructure\Container.cs" />
+    <Compile Include="Infrastructure\AppService.cs" />
+    <Compile Include="ModelServices\CategoryRepository.cs" />
+    <Compile Include="ModelServices\ICategoryRepository.cs" />
+    <Compile Include="ModelServices\IItemRepository.cs" />
+    <Compile Include="ModelServices\ItemRepository.cs" />
+    <Compile Include="ModelServices.Infrastructure\IDataRepository.cs" />
+    <Compile Include="ModelServices.Infrastructure\IDataService.cs" />
+    <Compile Include="ModelServices.Infrastructure\IEditableDataRepository.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryGroup.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Item.FormMetadata.cs" />
+    <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CategoryListViewModel.cs" />
+    <Compile Include="ViewModels\GroupDetailViewModel.cs" />
+    <Compile Include="ViewModels\ItemDetailViewModel.cs" />
+    <Compile Include="ViewModels\ItemEditorViewModel.cs" />
+    <Compile Include="ViewModels\ItemListByCategoryViewModel.cs" />
+    <Compile Include="ViewModels\ItemListViewModel.cs" />
+    <Compile Include="BindingProviders\ItemListBindingProvider.cs" />
+    <Compile Include="Converters\TextLabelStyleConverter.cs" />
+    <Compile Include="Converters\BooleanNegateConverter.cs" />
+    <Compile Include="BindingProviders\ItemDetailBindingProvider.cs" />
+    <Compile Include="ViewModels\TabViewModel.cs" />
+    <Compile Include="ViewModels\DrawerViewModel.cs" />
+    <Compile Include="ViewModels\NavigationViewModel.cs" />
+    <Compile Include="BindingProviders\CategoryListBindingProvider.cs" />
+    <Compile Include="BindingProviders\NavigationBindingProvider.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\AboutNavigationViewModel.cs" />
+    <Compile Include="ViewModels\UserSettingsViewModel.cs" />
+    <Compile Include="Models\UserSettings.cs" />
+    <Compile Include="Models\UserSettings.Form.cs" />
+    <Compile Include="BindingProviders\AboutBindingProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Category\1.jpg" />
+    <EmbeddedResource Include="Assets\Images\Category\5.jpg" />
+    <EmbeddedResource Include="Assets\Images\Category\2.jpg" />
+    <EmbeddedResource Include="Assets\Images\Category\4.jpg" />
+    <EmbeddedResource Include="Assets\Images\Category\3.jpg" />
+    <EmbeddedResource Include="Assets\Images\Category\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Data\Categories.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Data\Inventories.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Images\Large\AppleIpadRetina.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\AppleMacBookProMD102.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\BionicStableGrip.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\CanonEF16-35mm.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\CanonEOS5DMarkIII.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\CanonSpeedlite580EX.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\Diamondback2013.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\FenderFA-100.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\FenderStarcaster.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\FIFA2013.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\GranTurismo5.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\iPhone5.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\MarshallMG4Carbon.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\MensRHTaylorMadeComplete.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\MU_AwayShirts.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\MU_HomeShirts.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\NikeGolfVictoryHybrids.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\Playstation_Move.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\Playstation_WirelessHeadset.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\PS3_NBA.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\SamsungNoteII.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\SoccerShinguards.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\SonyPlaystation.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\SpaldingNBA.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\TaylorMadeGolfR11.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\TrueLinkswearGolfShoes.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\YamahaPSRS750.jpg" />
+    <EmbeddedResource Include="Assets\Images\Large\YamahaPSRS950.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\AppleIpadRetina.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\AppleMacBookProMD102.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\BionicStableGrip.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEF16-35mm.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEOS5DMarkIII.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonSpeedlite580EX.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Diamondback2013.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\FenderFA-100.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\FenderStarcaster.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\FIFA2013.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\GranTurismo5.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\iPhone5.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MarshallMG4Carbon.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MensRHTaylorMadeComplete.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MU_AwayShirts.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MU_HomeShirts.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\NikeGolfVictoryHybrids.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Playstation_Move.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Playstation_WirelessHeadset.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\PS3_NBA.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SamsungNoteII.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SoccerShinguards.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SonyPlaystation.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SpaldingNBA.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\TaylorMadeGolfR11.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\TrueLinkswearGolfShoes.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\YamahaPSRS750.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\YamahaPSRS950.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Intersoft.AppFramework, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=5ece42678189aa22, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.525\lib\Intersoft.AppFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.525\lib\Intersoft.Crosslight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.ComponentModel, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.525\lib\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.RestClient, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.525\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Auth, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.525\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.525\lib\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.525\lib\Intersoft.Crosslight.Services.Social.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\AcerAspire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\Bench.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\Dumbbell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\kindle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\Kinect.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\Korg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\lumia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\lumix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\nexus7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\Pentax.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\Persona.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\polaroid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\RolandRD300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Large\surface.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Persona.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\polaroid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\RolandRD300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\surface.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\AcerAspire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Bench.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Dumbbell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\kindle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Kinect.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Korg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\lumia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\lumix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\nexus7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Pentax.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

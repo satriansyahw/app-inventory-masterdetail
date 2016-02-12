@@ -1,0 +1,85 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="MyInventory.WinRT.Views.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyInventory.WinRT.Views"
+    xmlns:common="using:MyInventory.WinRT.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:IntersoftServices="using:Intersoft.Crosslight.WinRT.Services" mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <!-- Collection of items displayed by this page -->
+        <CollectionViewSource
+            x:Name="GroupItemsViewSource"
+            IsSourceGrouped="True"
+            Source="{Binding GroupItems}"/>
+    </Page.Resources>
+
+    <Grid Style="{StaticResource LayoutRootStyle}">
+
+        <ListView
+            x:Name="itemListView"
+            AutomationProperties.AutomationId="ItemsListView"
+            AutomationProperties.Name="Items"
+            TabIndex="1"
+            Grid.Row="1"
+            Margin="-10,-10,0,0"
+            Padding="40,0,0,60"
+            ItemsSource="{Binding Source={StaticResource GroupItemsViewSource}}"
+            IsSwipeEnabled="False"
+            SelectionMode="Single"
+            SelectedItem="{Binding SelectedItem, Mode=OneWay}"    
+            IntersoftServices:NavigationService.TargetKind="Detail"
+            IntersoftServices:NavigationService.EnableItemNavigation="true">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="60" Margin="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                            <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextStyle}" TextWrapping="NoWrap"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+            <ListView.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid Margin="7,7,0,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Title}" Margin="3,10,10,10" Style="{StaticResource GroupHeaderTextStyle}" />
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListView.GroupStyle>
+
+        </ListView>
+
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                </VisualState>
+
+                <!-- The back button and title have different styles when snapped -->
+                <VisualState x:Name="Snapped">
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>

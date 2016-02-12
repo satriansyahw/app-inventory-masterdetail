@@ -1,0 +1,66 @@
+﻿<common:LayoutAwarePage
+    x:Class="MyInventory.WinRT.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:MyInventory.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="20" x:Name="pageTitle" Grid.Column="1" Text="About" VerticalAlignment="Center" Style="{StaticResource SubheaderTextStyle}"/>
+        </Grid>
+
+        <ScrollViewer
+            x:Name="itemDetail"
+            AutomationProperties.AutomationId="ItemDetailScrollViewer"
+            Grid.Column="1"
+            Grid.Row="1"
+            Style="{StaticResource VerticalScrollViewerStyle}">
+
+            <ScrollViewer.Resources>
+                <Style TargetType="TextBlock" BasedOn="{StaticResource BodyTextStyle}"/>
+            </ScrollViewer.Resources>
+
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Width="400" HorizontalAlignment="Left">
+                    <TextBlock Text="Intersoft Crosslight makes native cross-platform mobile development truly a breeze -- thanks to its innovative data binding framework that makes MVVM possible in the iOS and Android world." TextWrapping="Wrap"/>
+                    <TextBlock Margin="0,20,0,0" Text="This collection of samples demonstrates the fundamental data binding capabilities supported in Crosslight such as binding mode, update trigger mode, and converters. It also shows various framework features such as delegate command, event aggregator for messaging, IoC container for dependency injection, and application services that can be consumed from the ViewModel." TextWrapping="Wrap"/>
+                    <Button x:Name="SendFeedbackButton" Content="Learn More" Command="{Binding SendFeedbackCommand}" Margin="0,20,0,0"  HorizontalAlignment="Center"/>
+                </StackPanel>
+                <TextBlock Grid.Row="1" Width="400" Text="ApplicationContext provides numerous useful information such as platform and device info that you can reliably consume from within the ViewModel." HorizontalAlignment="Left" VerticalAlignment="Bottom" TextWrapping="Wrap"/>
+            </Grid>
+        </ScrollViewer>
+
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                </VisualState>
+
+                <VisualState x:Name="Snapped">
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>

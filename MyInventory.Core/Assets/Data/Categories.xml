@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Categories>
+  <Category>
+    <Id>1</Id>
+    <Name>Camera &amp; Photography</Name>
+  </Category>
+  <Category>
+    <Id>2</Id>
+    <Name>Golf</Name>
+  </Category>
+  <Category>
+    <Id>3</Id>
+    <Name>Sports</Name>
+  </Category>
+  <Category>
+    <Id>4</Id>
+    <Name>Musical Instruments</Name>
+  </Category>
+  <Category>
+    <Id>5</Id>
+    <Name>Devices &amp; Gadgets</Name>
+  </Category>
+  <Category>
+    <Id>6</Id>
+    <Name>Games</Name>
+  </Category>
+</Categories>
