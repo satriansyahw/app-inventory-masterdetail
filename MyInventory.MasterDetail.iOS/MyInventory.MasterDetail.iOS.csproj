@@ -31,18 +31,9 @@
     <ConsolePause>false</ConsolePause>
     <MtouchDebug>True</MtouchDebug>
     <MtouchArch>i386, x86_64</MtouchArch>
-    <MtouchSdkVersion />
-    <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchProfiling>False</MtouchProfiling>
-    <MtouchFastDev>False</MtouchFastDev>
     <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
-    <MtouchUseLlvm>False</MtouchUseLlvm>
-    <MtouchUseThumb>False</MtouchUseThumb>
-    <MtouchUseSGen>False</MtouchUseSGen>
-    <MtouchUseRefCounting>False</MtouchUseRefCounting>
-    <OptimizePNGs>True</OptimizePNGs>
-    <MtouchFloat32>False</MtouchFloat32>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -67,18 +58,8 @@
     <IpaPackageName>
     </IpaPackageName>
     <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
-    <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchSdkVersion />
-    <MtouchProfiling>False</MtouchProfiling>
-    <MtouchFastDev>False</MtouchFastDev>
-    <MtouchUseLlvm>False</MtouchUseLlvm>
-    <MtouchUseThumb>False</MtouchUseThumb>
-    <MtouchUseSGen>False</MtouchUseSGen>
-    <MtouchUseRefCounting>False</MtouchUseRefCounting>
-    <OptimizePNGs>True</OptimizePNGs>
-    <MtouchFloat32>False</MtouchFloat32>
-    <DeviceSpecificBuild>False</DeviceSpecificBuild>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -115,63 +96,50 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Intersoft.AppFramework, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=5ece42678189aa22, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.525\lib\Intersoft.AppFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data.ComponentModel, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data.SQLite, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data.SQLite.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.RestClient, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.525\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.Auth, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.525\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.PushNotification, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.PushNotification.iOS, Version=5.0.5000.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.Social, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.Social.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.525\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Intersoft.Crosslight">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.iOS">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.541\lib\Intersoft.Crosslight.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.ComponentModel">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.541\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite.iOS">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.RestClient">
+      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.541\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Auth">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.541\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social.iOS">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification.iOS">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.541\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.AppFramework">
+      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.541\lib\Intersoft.AppFramework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

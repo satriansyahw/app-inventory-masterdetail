@@ -22,7 +22,7 @@ namespace MyInventory.ModelServices
             {
                 Name = x.Element("Name").Value,
                 Id = int.Parse(x.Element("Id").Value),
-                Image = x.Element("Id").Value + ".jpg"
+                Image = x.Element("Id").Value + ".png"
             };
 
             if (!string.IsNullOrEmpty(category.Image))

@@ -94,114 +94,6 @@
     <Compile Include="BindingProviders\AboutBindingProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Category\1.jpg" />
-    <EmbeddedResource Include="Assets\Images\Category\5.jpg" />
-    <EmbeddedResource Include="Assets\Images\Category\2.jpg" />
-    <EmbeddedResource Include="Assets\Images\Category\4.jpg" />
-    <EmbeddedResource Include="Assets\Images\Category\3.jpg" />
-    <EmbeddedResource Include="Assets\Images\Category\6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Data\Categories.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Assets\Data\Inventories.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Assets\Images\Large\AppleIpadRetina.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\AppleMacBookProMD102.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\BionicStableGrip.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\CanonEF16-35mm.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\CanonEOS5DMarkIII.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\CanonSpeedlite580EX.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\Diamondback2013.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\FenderFA-100.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\FenderStarcaster.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\FIFA2013.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\GranTurismo5.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\iPhone5.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\MarshallMG4Carbon.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\MensRHTaylorMadeComplete.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\MU_AwayShirts.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\MU_HomeShirts.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\NikeGolfVictoryHybrids.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\Playstation_Move.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\Playstation_WirelessHeadset.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\PS3_NBA.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\SamsungNoteII.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\SoccerShinguards.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\SonyPlaystation.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\SpaldingNBA.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\TaylorMadeGolfR11.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\TrueLinkswearGolfShoes.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\YamahaPSRS750.jpg" />
-    <EmbeddedResource Include="Assets\Images\Large\YamahaPSRS950.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\AppleIpadRetina.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\AppleMacBookProMD102.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\BionicStableGrip.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEF16-35mm.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEOS5DMarkIII.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonSpeedlite580EX.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Diamondback2013.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\FenderFA-100.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\FenderStarcaster.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\FIFA2013.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\GranTurismo5.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\iPhone5.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\MarshallMG4Carbon.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\MensRHTaylorMadeComplete.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\MU_AwayShirts.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\MU_HomeShirts.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\NikeGolfVictoryHybrids.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Playstation_Move.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Playstation_WirelessHeadset.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\PS3_NBA.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\SamsungNoteII.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\SoccerShinguards.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\SonyPlaystation.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\SpaldingNBA.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\TaylorMadeGolfR11.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\TrueLinkswearGolfShoes.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\YamahaPSRS750.jpg" />
-    <EmbeddedResource Include="Assets\Images\Thumbnail\YamahaPSRS950.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Intersoft.AppFramework, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=5ece42678189aa22, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.525\lib\Intersoft.AppFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.525\lib\Intersoft.Crosslight.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data.ComponentModel, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.525\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Data.SQLite, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.525\lib\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.RestClient, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.525\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.Auth, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.525\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.PushNotification, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.525\lib\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Intersoft.Crosslight.Services.Social, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.525\lib\Intersoft.Crosslight.Services.Social.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
@@ -213,90 +105,33 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wp8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\AcerAspire.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\Bench.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\Dumbbell.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\kindle.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\Kinect.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\Korg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\lumia.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\lumix.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\nexus7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\Pentax.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\Persona.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\polaroid.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\RolandRD300.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Large\surface.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Persona.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\polaroid.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\RolandRD300.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\surface.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\AcerAspire.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Bench.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Dumbbell.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\kindle.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Kinect.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Korg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\lumia.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\lumix.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\nexus7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\Thumbnail\Pentax.jpg" />
+    <Reference Include="Intersoft.Crosslight">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.541\lib\Intersoft.Crosslight.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.541\lib\Intersoft.Crosslight.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.ComponentModel">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.541\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.541\lib\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.RestClient">
+      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.541\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Auth">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.541\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.541\lib\Intersoft.Crosslight.Services.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.541\lib\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.AppFramework">
+      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.541\lib\Intersoft.AppFramework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -316,4 +151,90 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Data\Categories.xml" />
+    <EmbeddedResource Include="Assets\Data\Inventories.xml" />
+    <EmbeddedResource Include="Assets\Images\Category\1.png" />
+    <EmbeddedResource Include="Assets\Images\Category\2.png" />
+    <EmbeddedResource Include="Assets\Images\Category\3.png" />
+    <EmbeddedResource Include="Assets\Images\Category\4.png" />
+    <EmbeddedResource Include="Assets\Images\Category\5.png" />
+    <EmbeddedResource Include="Assets\Images\Category\6.png" />
+    <EmbeddedResource Include="Assets\Images\Large\bloodborne.png" />
+    <EmbeddedResource Include="Assets\Images\Large\caddy.png" />
+    <EmbeddedResource Include="Assets\Images\Large\callaway.png" />
+    <EmbeddedResource Include="Assets\Images\Large\canon.png" />
+    <EmbeddedResource Include="Assets\Images\Large\ck.png" />
+    <EmbeddedResource Include="Assets\Images\Large\cobra.png" />
+    <EmbeddedResource Include="Assets\Images\Large\dell.png" />
+    <EmbeddedResource Include="Assets\Images\Large\destiny.png" />
+    <EmbeddedResource Include="Assets\Images\Large\drone.png" />
+    <EmbeddedResource Include="Assets\Images\Large\essie.png" />
+    <EmbeddedResource Include="Assets\Images\Large\fallout4.png" />
+    <EmbeddedResource Include="Assets\Images\Large\gta5.png" />
+    <EmbeddedResource Include="Assets\Images\Large\huawei.png" />
+    <EmbeddedResource Include="Assets\Images\Large\iMac.png" />
+    <EmbeddedResource Include="Assets\Images\Large\iPad.png" />
+    <EmbeddedResource Include="Assets\Images\Large\iPhone6s.png" />
+    <EmbeddedResource Include="Assets\Images\Large\jane.png" />
+    <EmbeddedResource Include="Assets\Images\Large\japonesque.png" />
+    <EmbeddedResource Include="Assets\Images\Large\juicy.png" />
+    <EmbeddedResource Include="Assets\Images\Large\kidkraft.png" />
+    <EmbeddedResource Include="Assets\Images\Large\little.png" />
+    <EmbeddedResource Include="Assets\Images\Large\lorac.png" />
+    <EmbeddedResource Include="Assets\Images\Large\lumix.png" />
+    <EmbeddedResource Include="Assets\Images\Large\macbook.png" />
+    <EmbeddedResource Include="Assets\Images\Large\marylou.png" />
+    <EmbeddedResource Include="Assets\Images\Large\mgs5.png" />
+    <EmbeddedResource Include="Assets\Images\Large\nikon.png" />
+    <EmbeddedResource Include="Assets\Images\Large\note5.png" />
+    <EmbeddedResource Include="Assets\Images\Large\pinemeadow.png" />
+    <EmbeddedResource Include="Assets\Images\Large\promini.png" />
+    <EmbeddedResource Include="Assets\Images\Large\ps4.png" />
+    <EmbeddedResource Include="Assets\Images\Large\sonya7r.png" />
+    <EmbeddedResource Include="Assets\Images\Large\sonyrx100.png" />
+    <EmbeddedResource Include="Assets\Images\Large\srixon.png" />
+    <EmbeddedResource Include="Assets\Images\Large\starwars.png" />
+    <EmbeddedResource Include="Assets\Images\Large\surface.png" />
+    <EmbeddedResource Include="Assets\Images\Large\tsshure.png" />
+    <EmbeddedResource Include="Assets\Images\Large\xboxone.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\bloodborne.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\caddy.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\callaway.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\canon.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\ck.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\cobra.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\dell.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\destiny.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\drone.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\essie.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\fallout4.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\gta5.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\huawei.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\iMac.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\iPad.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\jane.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\japonesque.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\juicy.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\kidkraft.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\little.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\lorac.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\lumix.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\macbook.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\marylou.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\mgs5.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\nikon.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\note5.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\pinemeadow.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\promini.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\ps4.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\sonya7r.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\sonyrx100.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\srixon.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\starwars.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\surface.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\tsshure.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\xboxone.png" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\iPhone6s.png" />
+  </ItemGroup>
 </Project>

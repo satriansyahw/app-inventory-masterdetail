@@ -127,7 +127,7 @@ namespace MyInventory.Models
                 if (value == null)
                     this.Image = null;
                 else
-                    this.Image = "image_" + this.Name + ".jpg";
+                    this.Image = "image_" + this.Name + ".png";
 
                 OnPropertyChanged("LargeImage");
             }
