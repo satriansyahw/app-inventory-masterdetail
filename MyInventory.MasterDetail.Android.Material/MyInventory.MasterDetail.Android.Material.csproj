@@ -48,6 +48,65 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Reference Include="Intersoft.AppFramework, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=5ece42678189aa22, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.543\lib\Intersoft.AppFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Android, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Android.v7, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Android.v7.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Android.v7.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.543\lib\Intersoft.Crosslight.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.ComponentModel, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.543\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite.Android, Version=5.0.5000.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Data.SQLite.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.RestClient, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.RestClient.5.0.5000.543\lib\Intersoft.Crosslight.RestClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Auth, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Auth.5.0.5000.543\lib\Intersoft.Crosslight.Services.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification.Android, Version=5.0.5000.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Services.PushNotification.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Services.Social.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social.Android, Version=5.0.5000.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.543\lib\MonoAndroid10\Intersoft.Crosslight.Services.Social.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+>>>>>>> 733331d0473e5301e5e6213f4d9fb5d8caf3c44c
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />

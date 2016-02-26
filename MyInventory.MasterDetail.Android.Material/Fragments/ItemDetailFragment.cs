@@ -30,17 +30,6 @@ namespace MyInventory.Android
             get { return Resource.Layout.item_detail_layout; }
         }
 
-        protected override bool ShowActionBarUpButton
-        {
-            get
-            {
-                if (ServiceProvider.GetService<IApplicationService>().GetContext().Device.Kind == DeviceKind.Tablet)
-                    return false;
-                else
-                    return true;
-            }
-        }
-
         #endregion
 
         #region Methods
