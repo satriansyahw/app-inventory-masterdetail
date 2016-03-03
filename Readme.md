@@ -2,7 +2,7 @@
 
 The Advanced Master Detail sample showcases the Inventory Tracker sample with nested master detail navigation capability. The sample consists of two menus, which features the master-detail view integrated with the navigation drawer and also the advanced master detail view that supports nested navigation. To learn more about the advanced master detail navigation pattern, see Master-Detail Navigation.
 
-![image](http://developer.intersoftsolutions.com/download/attachments/6589748/advance-master-detail.png?version=1&modificationDate=1398825747330&api=v2)
+![image](http://developer.intersoftsolutions.com/download/attachments/6589748/AdvancedMaster.png?version=1&modificationDate=1456827240397&api=v2)
 
 #Supported Platforms
 
